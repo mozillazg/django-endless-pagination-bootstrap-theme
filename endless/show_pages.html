@@ -1,0 +1,5 @@
+<ul>
+{% for page in pages %}
+    {{ page|default_if_none:'<li class="disabled"><span class="ellipsis">…</span></li>' }}
+{% endfor %}
+</ul>
